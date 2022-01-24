@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #2c3e50;
+}
+h1 {
+  font-size: 24px;
+}
+
+.line {
+  background-color: white;
+  width: 20px;
+  height: 5px;
+  margin-top: 5px;
+}
+.navigation {
+  font-family: "Pacifico", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.leftnav {
+  margin-left: 20px;
+}
+
+.navitems li {
+  display: inline-block;
+}
+.mobilemenu {
+  display: none;
+}
+
+.mobilemenu {
+  background-color: wheat;
+  margin-right: 20px;
+}
+
+.navitems {
+  display: flex;
+  margin-right: 20px;
+}
+.actual_menu {
+  display: none;
+}
+
+.navchild {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.navchild:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+.navitems:last-child {
+  margin-right: 50px;
+}
+
+.pagecontent {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.middle_box {
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 88%;
+  height: 75%;
+
+  font-size: 20px;
+}
+.bgcontainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.bgdiv2 {
+  z-index: -5;
+  background: #e8dcc8;
+  position: absolute;
+  width: 45%;
+  height: 100vh;
+}
+
+.left {
+  box-shadow: -3px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  background: #f8ece4;
+  justify-content: space-between;
+
+}
+
+.left p{
+  text-align: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 30%;
+  width: 100%;
+}
+
+.left_icons {
+  height: 10%;
+  background: white;
+  display: flex;
+
+  justify-content: space-evenly;
+  padding-left: 70px;
+  padding-right: 70px;
+ 
+}
+.left_icons i{
+  margin-top: 2.5%;
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+}
+
+.right p,
+h1,
+button {
+  margin-bottom: 30px;
+}
+
+.imagecontainer {
+  width: 100%;
+  height: 50%;
+  background: #f8ece4;
+  display: flex;
+  justify-content: center;
+}
+.myimg {
+  align-self: center;
+  border-radius: 50%;
+  max-width: 80%;
+  max-height: 100%;
+}
+
+
+.buttoncontainer{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29%;
+  line-height: 26px;
+  height: 45px;
+  background: blue;
+  border-radius: 40px;
+  margin-right: 10px;
+  text-align: center;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29%;
+  height: 45px;
+  line-height: px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 40px;
+  text-align: center;
+}
+footer {
+  background-color: white;
+  height: 10vh;
+}
+
+@media screen and (max-width: 900px) {
+  .occupation {
+    display: none;
+  }
+  .bgdiv2 {
+    background: none;
+  }
+  .pagecontent {
+    height:180vh;
+    flex-direction: column;
+   
+  }
+  .middle_box {
+    flex-direction: column;
+    margin-left: 0%;
+  }
+  .left {
+    
+    width: 100%;
+    height: 100%;
+    background: #f8ece4;
+    box-shadow: -10px 0px 10px;
+  }
+
+  .right {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: -10px 10px 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .middle_box {
+    margin-bottom: 25%;
+    width: 75%;
+    font-size: 20px;
+    height: 80vh;
+  }
+
+  #myImage {
+    opacity: 0.7;
+    filter: alpha(opacity=40); /* msie */
+    border-radius: 50%;
+    max-width: 60%;
+  }
+
+  .mobilemenu,
+  .leftnav {
+    display: block;
+  }
+  .navitems {
+    display: none;
+  }
+  #mobile_navbar {
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .actual_menu li {
+    height: 30px;
+    border-top: solid 1px white;
+  }
+
+  .actual_menu {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .navchild {
+    margin: 0;
+  }
+}
