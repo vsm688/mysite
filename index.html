@@ -19,9 +19,11 @@
           </a>
         </div>
         <ul class="navitems" id="navitems2">
-          <li class="navchild"><a href="#"></a>Test</li>
-          <li class="navchild"><a href="#"></a>Test</li>
-          <li class="navchild"><a href="#"></a>Test</li>
+          <li class="navchild" onclick="showtext();"><a href="#"></a>About</li>
+          <li class="navchild"><a href="#"></a>Projects</li>
+          <li class="navchild" onclick="showContact();">
+            <a href="#"></a>Contact
+          </li>
         </ul>
 
         <div class="mobilemenu" id="togglemenubutton">
@@ -34,17 +36,13 @@
 
     <div class="mobilemenucontainer" id="mobile_navbar">
       <ul class="actual_menu" id="mobilemenuitems">
-        <li class="navchild"><a href="#"></a>Test</li>
+        <li class="navchild"><a href="#"></a></li>
         <li class="navchild"><a href="#"></a>Test</li>
         <li class="navchild"><a href="#"></a>Test</li>
       </ul>
     </div>
 
     <div class="pagecontent">
-      <div class="bgcontainer">
-        <div class="bgdiv1"></div>
-        <div class="bgdiv2"></div>
-      </div>
       <div class="middle_box">
         <div class="left">
           <div class="imagecontainer">
@@ -58,51 +56,65 @@
           </div>
 
           <div class="left_icons">
-            <i
-              class="fa fa-linkedin-square"
-              style="font-size: 36px; color: red"
-            ></i>
-            <i
-              class="fa fa-linkedin-square"
-              style="font-size: 36px; color: red"
-            ></i>
-            <i
-              class="fa fa-linkedin-square"
-              style="font-size: 36px; color: red"
-            ></i>
-            <i
-              class="fa fa-linkedin-square"
-              style="font-size: 36px; color: red"
-            ></i>
+            <i id="linkedinicon" class="fa fa-linkedin-square"></i>
+            <i id="githubicon" class="fa fa-github"></i>
+            <i id="twittericon" class="fa fa-twitter"></i>
           </div>
         </div>
         <div class="right">
-          <h1 style="font-size: 60px">hello</h1>
-          <h2>Here is a little bit about myself:</h2>
-          <br />
-          <div class="buttoncontainer">
-            <div class="resume">Resume</div>
-            <div class="projects">Projects</div>
+          <div id="contactform">
+            <form class="contactme">
+              <h1 class="getintouch">Get in Touch</h1>
+              <input type="text" placeholder="First Name" /><input
+                type="text"
+                placeholder="Last Name"
+              /><br />
+              <input type="email" placeholder="Email" /><input
+                type="tel"
+                placeholder="Phone"
+              /><br />
+              <label>Your Message:</label>
+              <textarea
+                class="yourtext"
+                type="text"
+                placeholder="Enter your message here"
+              ></textarea
+              ><br />
+              <div class="formbuttoncontainer">
+                <a class="bl">Submit</a>
+              </div>
+            </form>
           </div>
-          <br /><br />
-          <div class="left_paragraph">
-            <p class="description">
-              I am a 21-year old
-              <strong>computer science, IT and information management</strong>
-              Student heading into my final year of univerisity.
-            </p>
-            <br />
+          <div id="topdiv" class="top" style="background: white">
+            <h1 style="font-size: 60px">Hello</h1>
+            <p>Heres who I am and what I do:</p>
+            <a class="bl">Resume</a><a class="br">Projects</a>
+          </div>
+          <div id="botdiv" class="bot">
             <p>
-              An <strong>aspiring full stack developer</strong>. In my second
-              year I picked up HTML, CSS and Javascript as well as have used a
-              few server side frameworks.
+              I am a 21-year old computer Science IT and information management
+              student studying at the university of Auckland.
+            </p>
+            <p>
+              I enjoy travelling around New Zealand, playing my guitar, and
+              going to the gym. I also love to program in my spare time.
             </p>
           </div>
         </div>
       </div>
+      <div class="bgcontainer">
+        <div class="bgdiv1"></div>
+        <div class="bgdiv2"></div>
+      </div>
     </div>
 
-    <footer></footer>
+    <footer>
+      <div class="bottomcontainer">
+
+        Email and contact and stuff goes here :P
+      </div>
+      
+    </footer>
 
     <script src="script.js"></script>
   </body>
